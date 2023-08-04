@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em LocalLibrary], a very basic Express site ok nice very good.
+
+  h1 Dynamic content
+
+  p Library has following records:
+
+  ul
+    li #[strong Books:] !{book_count}
+    li #[strong Book Copies:] !{book_instance_count}
+    li #[strong Book Copies Available:] !{book_instance_available_count}
+    li #[strong Authors:] !{author_count}
+    li #[strong Genres:] !{genre_count}
